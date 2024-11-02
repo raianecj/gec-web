@@ -6,6 +6,7 @@
     font-weight: bold;
 }
 
+/* START LOGIN AND REGISTER */
 .container {
     width: 100%;
     margin: 0 auto;
@@ -25,12 +26,15 @@
 .wrap-login {
     max-width: 400px;
     width: 100%;
-    background-color: #d7d8d7;
+    background-color: #fff;
     border-radius: 1rem;
     overflow: hidden;
     padding: 30px;
-    box-shadow: 0 5px 10px 0 #999999;
+    box-shadow: 0 1px 15px 0 #999999;
     
+}
+.bannerLogin {
+    width: 70%;
 }
 
 .login-form {
@@ -39,12 +43,11 @@
 
 .login-form-title {
     display: block;
-    font-size: 30px;
-    color: #878af6;
+    font-size: 1rem;
+    color: #000;
     line-height: 1.2;
     text-align: center;
     margin-bottom: 20px;
-    text-shadow: 3px 3px 7px rgba(153, 153, 153, 1);
 }
 
 .login-form-title img {
@@ -57,28 +60,26 @@
 
 }
 .title-input {
-    color: #878af6;
+    color: #000;
+    font-size: 0.9rem;
+    font-weight:400;
 }
 
 .box-input {
     width: 100%;
     height: 35px;
-    border-width: 0;
-    border-radius: 40px;
     margin-top: 10px;
     margin-bottom: 10px;
     flex-direction: row;
     align-items: center;
-    background-color: #adadad;
-    box-shadow: 0 5px 10px 0 rgb(153, 153, 153);
+    background-color: #fff;
     padding-left: 10px;
 }
 
 .login-form-btn {
     font-size: 15px;
     border: none;
-    border-radius: 40px;
-    background-color: #878af6;
+    background-color: #2D9BF0;
     color:#fff;
     line-height: 1.2;
     text-transform: uppercase;
@@ -93,16 +94,15 @@
 }
 
 .txt1 {
-    font-size: 14px;
+    font-size: 0.9rem;
     color: #999999;
     line-height: 1.5;
     text-decoration: none;
-    margin-left: 40px;
 }
 
 .txt2 {
-    font-size: 14px;
-    color: #878af6;
+    font-size: 0.9rem;
+    color: #2D9BF0;
     line-height: 1.5;
     text-decoration: none;
     

@@ -1,0 +1,42 @@
+/* src/pages/EventDetails/style.css */
+.event-details {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.event-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+}
+
+.event-details h1 {
+    color: #2D9BF0;
+    margin-bottom: 1rem;
+}
+
+.event-details p {
+    font-size: 1rem;
+    color: #365b77;
+    margin-bottom: 1rem;
+}
+
+.register-button {
+    padding: 0.8rem 1.5rem;
+    color: #ffffff;
+    background-color: #2D9BF0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.register-button:hover {
+    background-color: #1c7fba;
+}

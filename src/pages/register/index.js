@@ -1,6 +1,6 @@
 // src/pages/register/index.js
-import React, { useState } from 'react'; // Corrigido aqui
-import account_circle from '../../assets/account_circle.png';
+import React, { useState } from 'react'; 
+import bannerLogin from '../../assets/banner-login.jpg';
 import './style.css';
 import { Link } from 'react-router-dom';
 import { register } from '../../services/api';
@@ -20,7 +20,7 @@ function Register() {
         }
         try {
             const response = await register(name, email, password);
-            alert('Usuário cadastrado com sucesso!'); // Mudou para alert
+            alert('Usuário cadastrado com sucesso!'); 
             console.log(response.data);
         } catch (err) {
             setError('Erro ao registrar. Tente novamente.');
@@ -31,9 +31,9 @@ function Register() {
         <div className="container">
             <div className="container-login">
                 <div className="wrap-login">
-                    <form onSubmit={handleRegister} className="login-form"> {/* Formulário corrigido */}
+                    <form onSubmit={handleRegister} className="login-form"> {}
                         <span className="login-form-title">
-                            <img src={account_circle} alt='circulo de conta' />
+                            <img className='bannerLogin' src={bannerLogin} alt='circulo de conta' />
                         </span>
                         <span className="login-form-title">Crie sua Conta</span>
 
@@ -58,7 +58,7 @@ function Register() {
                         </div>
 
                         <div className='container-login-form-btn'>
-                            <button type='submit' className='login-form-btn'>Registrar</button> {/* Adicione type='submit' */}
+                            <button type='submit' className='login-form-btn'>Registrar</button> {}
                         </div>
                         {error && <p className='error-message'>{error}</p>}
                         <div className='text-center'>

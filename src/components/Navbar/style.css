@@ -1,0 +1,171 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --primary-color:#2D9BF0;
+    --secondary-color: #9aa4ac;
+    --dark-primary-color: #365b77;
+    --dark-secondary-color: #71787e;
+    --light-color: #ffffff;
+    --dark-color: #2c2c2c;
+}
+
+body {
+    font-family: sans-serif;
+    color: var(--dark-color);
+}
+
+a{
+    text-decoration: none;
+    color: unset;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+/* NAV BAR */
+.nav {
+    background-color: var(--primary-color);
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    left: 0;
+    box-shadow: 2px 0px 5px var(--dark-secondary-color);
+    z-index: 1;
+}
+
+.nav .inner-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1300px;
+    margin-inline: auto;
+}
+
+.logo {
+    color: var(--light-color);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 2rem;
+    color: var(--light-color);
+}
+
+.navs-icon-container {
+    display: flex;
+    align-items: center;
+    color: var(--light-color);
+}
+
+.navs-icon-container svg {
+    height: 1.5rem;
+    color: var(--light-color);
+    padding-left: 1rem;
+}
+
+.navs-icon-container .shopping-cart-btn {
+    position: relative;
+}
+
+.search-input-container {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    border-bottom: 1px solid var(--light-color);
+    padding: 0.5rem;
+    margin-right: 1rem;
+}
+
+.search-input-container input {
+    border: none;
+    outline: none;
+    background-color: var(--primary-color);
+    color: var(--light-color);
+}
+
+.search-input-container svg {
+    height: 1rem;
+}
+
+.search-input-container ::placeholder {
+    color: var(--light-color);
+}
+
+nav ul li:hover {
+    transform: translateY(-4px);
+    transition: all 0.2s;
+    font-weight: bold;
+}
+
+.menu-button {
+    display: none;
+}
+
+/* END NAV BAR */
+
+@media (max-width:920px) {
+    .nav h1 {
+        font-size: 1.2rem;
+    }
+
+    .menu-button {
+        display: inline-block; /* Exibe o botão quando a tela é menor que 920px */
+        color: var(--light-color);
+        font-size: 1.5rem;
+        padding: 0.5rem;
+        cursor: pointer;
+    }
+
+    header .inner-content {
+        gap: 2rem;
+        padding: 1.5rem;
+        padding-top: 3rem;
+    }
+
+    header h2 {
+        font-size: 1.8rem;
+    }
+    
+    nav {
+        position: absolute;
+        top: 55px;
+        left: 0;
+        background-color: var(--primary-color);
+        width: 100%;
+        padding-bottom: 1rem;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        
+    }
+    nav ul.show {
+        display: flex;
+    }
+
+    nav ul li {
+        text-align: center;
+        padding: 0.8rem;
+    
+    }
+}
+
+@media (max-width:720px) {
+    header .inner-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width:580px) {
+    .search-input-container {
+        display: none;
+    }
+}

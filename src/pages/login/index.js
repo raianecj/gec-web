@@ -1,6 +1,6 @@
 // src/pages/login/index.js
-import React, { useState } from 'react'; // Corrigido aqui
-import account_circle from '../../assets/account_circle.png';
+import React, { useState } from 'react'; 
+import bannerLogin from '../../assets/banner-login.jpg';
 import './style.css';
 import { Link } from 'react-router-dom';
 import { login } from '../../services/api';
@@ -16,7 +16,7 @@ function Login() {
         e.preventDefault();
         try {
             const response = await login(email, password);
-            alert('Login realizado com sucesso!'); // Mudou para alert
+            alert('Login realizado com sucesso!'); 
             console.log(response.data);
             navigate('/home');
         } catch (err) {
@@ -28,11 +28,11 @@ function Login() {
         <div className="container">
             <div className="container-login">
                 <div className="wrap-login">
-                    <form onSubmit={handleLogin} className="login-form"> {/* Formulário corrigido */}
+                    <form onSubmit={handleLogin} className="login-form"> {}
                         <span className="login-form-title">
-                            <img src={account_circle} alt='circulo de conta' />
+                            <img className='bannerLogin' src={bannerLogin} alt='circulo de conta' />
                         </span>
-                        <span className="login-form-title">Bem Vindo!</span>
+                        <span className="login-form-title">Bem Vindo ao GEC!</span>
 
                         <div className='wrap-input'>
                             <label className='title-input'>E-mail:</label>
@@ -54,7 +54,7 @@ function Login() {
                         </div>
 
                         <div className='container-login-form-btn'>
-                            <button type='submit' className='login-form-btn'>Entrar</button> {/* Adicione type='submit' */}
+                            <button type='submit' className='login-form-btn'>Entrar</button> {}
                         </div>
                         {error && <p className='error-message'>{error}</p>}
                         <div className='text-center'>

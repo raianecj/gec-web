@@ -1,0 +1,46 @@
+.events-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.event-card {
+    background-color: var(--light-color);
+    border: 1px solid var(--light-color);
+    border-radius: 1px;
+    padding: 2rem;
+    height: 400px;
+    width: 350px;
+    text-align: center;
+    box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.178);
+}
+
+.event-card:hover {
+    border: 1px solid var(--primary-color);
+}
+
+.event-card h4 {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.event-card p {
+    color: var(--dark-color);
+    margin-bottom: 0.5rem;
+}
+
+.event-card button {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.event-card button:hover {
+    background-color: var(--dark-primary-color);
+}
