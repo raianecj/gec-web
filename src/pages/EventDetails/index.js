@@ -2,6 +2,8 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import './style.css';
+import Navbar from '../../components/Navbar';
+import Footer from '../../components/Footer';
 
 export default function EventDetails() {
     const { eventId } = useParams();
@@ -25,12 +27,23 @@ export default function EventDetails() {
 
     return (
         <div className="event-details">
-            <img src={event.image} alt={event.title} className="event-image" />
+            <Navbar />
+            <main>
+                <div className='event-details__page-inner-content'>
+                <div className='event-details__page-inner-content-details'>
+                <img src={event.image} alt={event.title} className="event-image" />
             <h1>{event.title}</h1>
             <p><strong>Local:</strong> {event.location}</p>
             <p><strong>Data:</strong> {event.date}</p>
             <p><strong>Descrição:</strong> {event.description}</p>
             <button className="register-button">Inscreva-se</button>
+                </div>
+                </div>
+            </main>
+            <footer>
+                <Footer />
+            </footer>
         </div>
+       
     );
 }

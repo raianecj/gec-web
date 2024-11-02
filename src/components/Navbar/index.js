@@ -16,7 +16,7 @@ export default function Navbar() {
                 <nav className={show ? "show" : ""}>
                     <ul>
                         <li><Link to="/home">Home</Link></li>
-                        <li><Link to="/events">Eventos</Link></li>
+                        <li><Link to="/allEvents">Eventos</Link></li>
                         <li><Link to="/subscribers">Inscrições</Link></li>
                         <li><Link to="/">Conta</Link></li>
                     </ul>

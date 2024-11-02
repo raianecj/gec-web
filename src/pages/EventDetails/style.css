@@ -1,6 +1,12 @@
 /* src/pages/EventDetails/style.css */
-.event-details {
-    max-width: 800px;
+
+.event-details__page-inner-content {
+    margin: 2rem auto;
+    max-width: 1200px;
+}
+
+.event-details__page-inner-content-details{
+    max-width: 1100px;
     margin: 2rem auto;
     padding: 1rem;
     background-color: var(--background-color);

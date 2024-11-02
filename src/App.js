@@ -5,6 +5,7 @@ import Register from "./pages/register";
 import Home from "./pages/home";
 import EventDetails from './pages/EventDetails';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import AllEvents from './pages/AllEvents';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/home" element={<Home />} />
         <Route path="/events/:eventId" element={<EventDetails />} />
+        <Route path="/allEvents" element={<AllEvents />} />
       </Routes>
     </Router>
   );

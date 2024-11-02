@@ -17,7 +17,7 @@ export default function Footer() {
                 </div>
                 <div className="footer-column">
                     <h4>Acesso</h4>
-                    <a href="/login">Login</a>
+                    <a href="/">Login</a>
                     <a href="/register">Cadastre-se</a>
                 </div>
                 <div className="footer-column">
@@ -35,7 +35,9 @@ export default function Footer() {
                     </div>
                 </div>
             </div>
+            <div className='footer-copy'>
             <p>&copy; 2024 HI RUNNERS. Todos os direitos reservados.</p>
+            </div>
         </footer>
     );
 }

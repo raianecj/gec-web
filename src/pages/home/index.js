@@ -22,7 +22,7 @@ function Home() {
 
                     <div className='main-content'>
                         <EventsList />
-                        <Link to='/' className='see-more-btn'>
+                        <Link to='/AllEvents' className='see-more-btn'>
                             Ver todos os eventos
                         </Link>
                     </div>

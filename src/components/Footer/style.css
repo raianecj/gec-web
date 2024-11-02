@@ -55,9 +55,10 @@
     color: var(--accent-color);
 }
 
-footer p {
+.footer-copy p {
     font-weight: 200;
     text-align: center;
+    color: var(--light-color);
 }
 
 /* Responsividade */

@@ -17,7 +17,7 @@ export default function Header() {
                 <div className='hero-foreground'>
                 <h2>Libere sua energia!</h2>
                 <p>Encontre o evento ideal para você aqui.</p>
-                <Link to='/events' className='see-more-btn'>
+                <Link to='/AllEvents' className='see-more-btn'>
                     <span>Ver todos os eventos</span>
                 </Link>
                 </div>
