@@ -1,3 +1,4 @@
+/* src/components/Header/style.css */
 header {
     position: relative;
     width: 100%;
@@ -19,7 +20,7 @@ header {
     object-fit: cover; /* Faz com que a imagem cubra toda a área mantendo a proporção */
 }
 
-.inner-content {
+header .inner-content {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -32,29 +33,39 @@ header {
 }
 
 .hero-foreground {
-    position: absolute;
+    position: relative;
+    display: flex;
+    flex-direction: column;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.5); /* Adiciona uma camada de sobreposição para dar contraste ao texto */
+    align-items: center;
+    justify-content: center;
     z-index: 1;
 }
 
-h2, p, a {
+.hero-foreground h2, p, a {
     z-index: 2;
+    padding: .5rem;
+    color: var(--light-color);
 }
 
-a {
+h2 {
+    font-size: 2rem;
+}
+
+.see-more-btn {
     color: #ffffff;
     text-decoration: none;
     margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #ff6b6b;
-    border-radius: 5px;
+    padding: 15px 25px;
+    background-color: var(--primary-color);
+    border-radius: 1px;
     transition: background 0.3s;
 }
 
-a:hover {
+header a:hover {
     background-color: #ff4b4b;
 }

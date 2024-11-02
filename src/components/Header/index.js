@@ -14,13 +14,13 @@ export default function Header() {
                 <div className='hero-background'>
                     <img src={bannerHome} alt="Banner"></img>
                 </div>
-                <div className='hero-foreground'></div>
+                <div className='hero-foreground'>
                 <h2>Libere sua energia!</h2>
                 <p>Encontre o evento ideal para você aqui.</p>
                 <Link to='/events' className='see-more-btn'>
                     <span>Ver todos os eventos</span>
                 </Link>
-
+                </div>
 
             </div>
         </header>
