@@ -15,10 +15,10 @@ export default function Navbar() {
                 <h1 className="logo">HI RUNNERS</h1>
                 <nav className={show ? "show" : ""}>
                     <ul>
-                        <li><Link to="/">Home</Link></li>
+                        <li><Link to="/home">Home</Link></li>
                         <li><Link to="/events">Eventos</Link></li>
                         <li><Link to="/subscribers">Inscrições</Link></li>
-                        <li><Link to="/account">Conta</Link></li>
+                        <li><Link to="/">Conta</Link></li>
                     </ul>
                 </nav>
                 <div className="navs-icon-container">

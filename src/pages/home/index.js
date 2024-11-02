@@ -4,6 +4,7 @@ import './style.css';
 import Navbar from '../../components/Navbar/index.js';
 import Header from '../../components/Header/index.js';
 import EventsList from '../../components/EventList';
+import Footer from '../../components/Footer/index.js';
 import { Link } from 'react-router-dom';
 
 function Home() {
@@ -29,6 +30,9 @@ function Home() {
                     
                 </div>
             </main>
+            <footer>
+                <Footer />
+            </footer>
         </div>
     )
 };
