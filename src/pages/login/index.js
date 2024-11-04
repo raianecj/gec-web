@@ -32,7 +32,7 @@ function Login() {
                         <span className="login-form-title">
                             <img className='bannerLogin' src={bannerLogin} alt='circulo de conta' />
                         </span>
-                        <span className="login-form-title">Bem Vindo ao GEC!</span>
+                        <span className="login-form-title">HI RUNNERS</span>
 
                         <div className='wrap-input'>
                             <label className='title-input'>E-mail:</label>

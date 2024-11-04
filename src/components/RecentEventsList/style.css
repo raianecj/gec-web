@@ -11,7 +11,7 @@
     border: 1px solid var(--light-color);
     border-radius: 8px;
     padding: 2rem;
-    height: 550px;
+    height: 400px;
     width: 350px;
     text-align: center;
     box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.178);
@@ -27,18 +27,12 @@
 .event-card h4 {
     color: var(--primary-color);
     font-size: 1.2rem;
-    margin-top: 0.5rem;
     margin-bottom: 0.5rem;
 }
 
 .event-card p {
     color: var(--dark-color);
     margin-bottom: 0.5rem;
-}
-
-.event-image {
-    height: 250px;
-    width: 250px;
 }
 
 .learn-more-button {

@@ -3,9 +3,9 @@
 import './style.css';
 import Navbar from '../../components/Navbar/index.js';
 import Header from '../../components/Header/index.js';
-import EventsList from '../../components/EventList';
 import Footer from '../../components/Footer/index.js';
 import { Link } from 'react-router-dom';
+import RecentEventsList from '../../components/RecentEventsList/index.js';
 
 function Home() {
 
@@ -21,7 +21,7 @@ function Home() {
                     </div>
 
                     <div className='main-content'>
-                        <EventsList />
+                        <RecentEventsList />
                         <Link to='/AllEvents' className='see-more-btn'>
                             Ver todos os eventos
                         </Link>

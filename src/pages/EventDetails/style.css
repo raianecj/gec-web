@@ -1,18 +1,18 @@
 /* src/pages/EventDetails/style.css */
 
-.event-details__page-inner-content {
+.eventDetails__page-inner-content {
     margin: 2rem auto;
     max-width: 1200px;
 }
 
-.event-details__page-inner-content-details{
+.eventDetails__page-inner-content-details{
     max-width: 1100px;
     margin: 2rem auto;
     padding: 1rem;
     background-color: var(--background-color);
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    text-align: left;
 }
 
 .event-image {
@@ -22,15 +22,17 @@
     margin-bottom: 1.5rem;
 }
 
-.event-details h1 {
+.eventDetails__page-inner-content-details h1 {
     color: var(--primary-color);
     margin-bottom: 1rem;
+    text-align: center;
 }
 
-.event-details p {
+.eventDetails__page-inner-content-details p {
     font-size: 1rem;
     color: var(--dark-color);
     margin-bottom: 1rem;
+    font-weight: 200;
 }
 
 .register-button {
@@ -41,6 +43,7 @@
     border-radius: 1px;
     font-size: 1rem;
     transition: background-color 0.2s;
+    
 }
 
 .register-button:hover {
