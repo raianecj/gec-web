@@ -7,17 +7,21 @@ import EventDetails from './pages/EventDetails';
 import Payment from "./pages/Payment";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import AllEvents from './pages/AllEvents';
+import EventRegistration from "./pages/EventRegistration";
+import Profile from './pages/Profile';
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Login />} />
+        <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
-        <Route path="/home" element={<Home />} />
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/" element={<Home />} />
         <Route path="/events/:eventId" element={<EventDetails />} />
         <Route path="/allEvents" element={<AllEvents />} />
         <Route path="/payment" element={<Payment />} />
+        <Route path="/register/:eventId" element={<EventRegistration />} />
       </Routes>
     </Router>
   );

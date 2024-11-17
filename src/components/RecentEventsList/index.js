@@ -10,7 +10,7 @@ export default function RecentEventsList() {
     useEffect(() => {
         const fetchEvents = async () => {
             try {
-                const response = await fetch('http://192.168.1.15:8080/events'); // Substitua pela URL da API
+                const response = await fetch('http://localhost:8080/events'); // Substitua pela URL da API
                 const data = await response.json();
                 // Ordena os eventos por data em ordem decrescente e pega os 6 mais recentes
                 const sortedEvents = data.sort((a, b) => new Date(b.date) - new Date(a.date)).slice(0, 6);

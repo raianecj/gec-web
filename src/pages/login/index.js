@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import bannerLogin from '../../assets/banner-login.jpg';
 import './style.css';
 import { Link } from 'react-router-dom';
-import { login } from '../../services/api';
+
 import { useNavigate } from 'react-router-dom';
 
 function Login() {
@@ -15,14 +15,29 @@ function Login() {
     const handleLogin = async (e) => {
         e.preventDefault();
         try {
-            const response = await login(email, password);
-            alert('Login realizado com sucesso!'); 
-            console.log(response.data);
-            navigate('/home');
-        } catch (err) {
-            setError('Erro ao fazer login. Verifique suas credenciais.');
-        }
-    };
+            const response = await fetch('http://localhost:8080/login', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({ email, password }),
+            });
+      
+            const data = await response.json();
+      
+            if (response.ok) {
+              // Salva o token no localStorage
+              localStorage.setItem('authToken', JSON.stringify({ token: data.token }));
+              // Redireciona para a página Home
+              navigate('/home');
+            } else {
+              // Mostra mensagem de erro em caso de credenciais inválidas
+              setError('Erro ao fazer login');
+            }
+          } catch (error) {
+            console.error('Erro na requisição de login:', error);
+            setError('Erro ao conectar ao servidor.');
+          }
+        };
+      
 
     return (
         <div className="container">
@@ -54,7 +69,7 @@ function Login() {
                         </div>
 
                         <div className='container-login-form-btn'>
-                            <button type='submit' className='login-form-btn'>Entrar</button> {}
+                            <button type='submit' className='login-form-btn'>Entrar</button> 
                         </div>
                         {error && <p className='error-message'>{error}</p>}
                         <div className='text-center'>

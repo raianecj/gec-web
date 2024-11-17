@@ -10,7 +10,7 @@ export default function EventsList() {
     useEffect(() => {
         const fetchEvents = async () => {
             try {
-                const response = await fetch('http://192.168.1.15:8080/events'); // Substitua pela URL da API
+                const response = await fetch('http://localhost:8080/events'); // Substitua pela URL da API
                 const data = await response.json();
                 setEvents(data); // Ajuste conforme a estrutura dos dados da API
             } catch (error) {

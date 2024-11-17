@@ -6,6 +6,7 @@ import './style.css';
 import Navbar from '../../components/Navbar/index.js';
 import Footer from '../../components/Footer';
 import { useNavigate } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 function EventDetails() {
     const { eventId } = useParams();
@@ -68,12 +69,14 @@ function EventDetails() {
                         <p><strong>Local:</strong> {event.location}</p>
                         <p><strong>Data:</strong> {event.date}</p>
                         <p><strong>Descrição:</strong> {event.description}</p>
-                        <button className="register-button" onClick={handleRegistration}>Inscreva-se</button>
+                        <Link to={`/register/${eventId}`}>
+                            <button className="register-button">Inscrever-se</button>
+                        </Link>
                     </div>
                 </div>
             </main>
             <footer>
-                 <Footer />
+                <Footer />
             </footer>
 
 
