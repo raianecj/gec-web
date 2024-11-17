@@ -1,3 +1,57 @@
+
+# Hi Runners
+
+Hi Runners é um sistema de gestão de eventos esportivos feito para conectar atletas aos melhores eventos esportivos do Brasil.
+
+
+
+
+![Static Badge](https://img.shields.io/badge/STATUS%3A%20EM%20DESENVOLVIMENTO%20-%20)
+
+
+
+
+
+## Funcionalidades
+
+- Cadastrar usuário
+- Visualizar eventos
+- Inscrever em evento
+- Cancelar inscrição em evento
+- Realizar pagamento do evento
+
+
+## Tecnologias
+ - HTML, CSS e JS
+ - React JS
+ - Node.js
+ - PostgreSQL
+
+## Demonstração
+
+Insira um gif ou um link de alguma demonstração
+
+
+## Rodando localmente
+
+Este projeto é dividido em duas partes:
+ - Backend
+ - Frontend
+
+O Frontend precisa que o Backend esteja sendo executado para funcionar.
+
+### Pré-requisito
+Antes de começar, você vai precisar ter instalado na sua máquina as seguintes ferramentas: Git, Node.js, editor para trabalhar com código como o VSCode e um banco de dados, foi utilizado o PostgreeSQL.
+
+
+
+## Licença
+
+Feito com ❤ por Raiane Carvalho.
+
+
+<!-- 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +122,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+-->
