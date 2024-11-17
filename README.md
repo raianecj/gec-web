@@ -1,16 +1,8 @@
-
 # Hi Runners
 
 Hi Runners é um sistema de gestão de eventos esportivos feito para conectar atletas aos melhores eventos esportivos do Brasil.
 
-
-
-
 ![Static Badge](https://img.shields.io/badge/STATUS%3A%20EM%20DESENVOLVIMENTO%20-%20)
-
-
-
-
 
 ## Funcionalidades
 
@@ -20,7 +12,6 @@ Hi Runners é um sistema de gestão de eventos esportivos feito para conectar at
 - Cancelar inscrição em evento
 - Realizar pagamento do evento
 
-
 ## Tecnologias
  - HTML, CSS e JS
  - React JS
@@ -29,8 +20,8 @@ Hi Runners é um sistema de gestão de eventos esportivos feito para conectar at
 
 ## Demonstração
 
-Insira um gif ou um link de alguma demonstração
-
+![image](https://github.com/user-attachments/assets/532f2644-ac51-405b-8f46-4763f89a580a)
+![image](https://github.com/user-attachments/assets/0459a276-4b35-425d-aa59-f1f201448df1)
 
 ## Rodando localmente
 
@@ -38,12 +29,10 @@ Este projeto é dividido em duas partes:
  - Backend
  - Frontend
 
-O Frontend precisa que o Backend esteja sendo executado para funcionar.
+O Frontend precisa que o Backend esteja sendo executado para funcionar. Você pode encontrar o backend [aqui](https://github.com/raianecj/BackEnd)!
 
 ### Pré-requisito
 Antes de começar, você vai precisar ter instalado na sua máquina as seguintes ferramentas: Git, Node.js, editor para trabalhar com código como o VSCode e um banco de dados, foi utilizado o PostgreeSQL.
-
-
 
 ## Licença
 
