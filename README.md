@@ -20,8 +20,9 @@ Hi Runners é um sistema de gestão de eventos esportivos feito para conectar at
 
 ## Demonstração
 
-![image](https://github.com/user-attachments/assets/532f2644-ac51-405b-8f46-4763f89a580a)
-![image](https://github.com/user-attachments/assets/0459a276-4b35-425d-aa59-f1f201448df1)
+![image](https://github.com/user-attachments/assets/68267fc2-1023-4a51-a685-fd9dfa43395f)
+![image](https://github.com/user-attachments/assets/3f69bff2-c1ad-41a1-8d4d-f83cdb0d51e7)
+![image](https://github.com/user-attachments/assets/d58d7bcf-dbda-40d3-9dac-c2f029035a1f)
 
 ## Rodando localmente
 
