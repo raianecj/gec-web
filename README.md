@@ -11,7 +11,7 @@ Hi Runners é um sistema de gestão de eventos esportivos. Desenvolvido para pro
 - Inscrever em evento
 - Cancelar inscrição em evento
 - Realizar pagamento do evento
-- Atualizad dados do usuário
+- Atualizar dados do usuário
 
 ## Tecnologias
  - HTML, CSS e JS
