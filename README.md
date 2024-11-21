@@ -1,6 +1,6 @@
 # Hi Runners
 
-Hi Runners é um sistema de gestão de eventos esportivos feito para conectar atletas aos melhores eventos esportivos do Brasil.
+Hi Runners é um sistema de gestão de eventos esportivos. Desenvolvido para projeto da faculdade, foi feito para conectar atletas aos melhores eventos esportivos do Brasil.
 
 ![Static Badge](https://img.shields.io/badge/STATUS%3A%20EM%20DESENVOLVIMENTO%20-%20)
 
