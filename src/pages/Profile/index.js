@@ -37,7 +37,7 @@ const Profile = () => {
 
   const handleLogout = () => {
     clearSession();
-    navigate('/home'); // Redireciona para a página de login
+    navigate('/'); // Redireciona para a página home
   };
 
   if (!user) {
@@ -52,9 +52,20 @@ const Profile = () => {
       <main>
         <div className='profile__page-inner-content'>
           <div className='profile__page-inner-content-details'>
-            <h1>Perfil do Usuário</h1>
-            <p><strong>Nome completo:</strong> {user.name}</p>
-            <p><strong>E-mail:</strong> {user.email}</p>
+            <div className='allevents__section-title'>
+              <h3>Meus Dados</h3>
+            </div>
+            <div className='profile__underline'>
+            </div>
+            <div className='wrap-input'>
+              <label className='title-input'>Nome Completo:</label>
+              <input type="text" className='box-input' value={user.fullName} />
+            </div>
+            <div className='wrap-input'>
+              <label className='title-input'>E-mail:</label>
+              <input type='text' className='box-input' value={user.email} />
+            </div>
+            <button className='edit-button' >Atualizar meus dados</button>
             <button className='logout-button' onClick={handleLogout}>Sair da Conta</button>
           </div>
         </div>

@@ -27,7 +27,7 @@ function Login() {
               // Salva o token no localStorage
               localStorage.setItem('authToken', JSON.stringify({ token: data.token }));
               // Redireciona para a página Home
-              navigate('/home');
+              navigate('/');
             } else {
               // Mostra mensagem de erro em caso de credenciais inválidas
               setError('Erro ao fazer login');

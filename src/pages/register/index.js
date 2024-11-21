@@ -2,7 +2,7 @@
 import React, { useState } from 'react'; 
 import bannerLogin from '../../assets/banner-login.jpg';
 import './style.css';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { register } from '../../services/api';
 
 function Register() {
@@ -11,6 +11,7 @@ function Register() {
     const [password, setPassword] = useState('');
     const [confirmPassword, setConfirmPassword] = useState('');
     const [error, setError] = useState('');
+    const navigate = useNavigate();
 
     const handleRegister = async (e) => {
         e.preventDefault();
@@ -22,6 +23,7 @@ function Register() {
             const response = await register(name, email, password);
             alert('Usuário cadastrado com sucesso!'); 
             console.log(response.data);
+            navigate('/login');
         } catch (err) {
             setError('Erro ao registrar. Tente novamente.');
         }

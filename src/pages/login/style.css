@@ -74,6 +74,7 @@
     align-items: center;
     background-color: #fff;
     padding-left: 10px;
+    font-weight: 400;
 }
 
 .login-form-btn {
