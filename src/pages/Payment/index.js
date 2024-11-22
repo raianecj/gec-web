@@ -83,16 +83,39 @@ function Payment() {
 
         {!loading && registration && (
           <div className="payment__details">
-            <h4>Evento: {registration.event.title}</h4>
-            <p>Data: {new Date(registration.event.date).toLocaleDateString()}</p>
-            <p>Modalidade: {registration.modalidadeCorrida}</p>
-            <p>Status: {registration.status}</p>
-            <p>Valor: R$ {registration.event.price}</p>
-            <button onClick={handlePayment} className="payment__button">
-              Finalizar Pagamento
-            </button>
+            <h3>Resumo da sua inscrição</h3>
+            <p><strong>Evento: </strong>{registration.event.title}</p>
+            <p><strong>Data: </strong>{new Date(registration.event.date).toLocaleDateString()}</p>
+            <p><strong>Atleta: </strong>{registration.nomeCompleto}</p>
+            <p><strong>CPF: </strong>{registration.cpf}</p>
+            <p><strong>Modalidade: </strong>{registration.modalidadeCorrida}</p>
+            <p><strong>Camiseta: </strong>{registration.tamanhoCamisa}</p>
+            <p><strong>Valor: </strong>R$ 75</p>  {/* <p><strong>Valor: </strong>R$ {registration.event.price}</p>*/}
+            <p><strong>Status: </strong>{registration.status}</p>
+
           </div>
         )}
+        <div className='payment__select-options'>
+          <h3>Como você prefere pagar?</h3>
+          <div className="payment__options">
+            <div className="payment__options-pix">
+              <input type="radio" id="pix" name="options" value="Pix" />
+              <label htmlFor="pix">Pix</label>
+            </div>
+            <div className="payment__options-boleto">
+              <input type="radio" id="boleto" name="options" value="Boleto" />
+              <label htmlFor="boleto">Boleto</label>
+            </div>
+            <div className="payment__options-cartao-credito">
+              <input type="radio" id="cartao" name="options" value="CartaoCredito" />
+              <label htmlFor="cartao">Cartão de Crédito</label>
+            </div>
+          </div>
+          <button onClick={handlePayment} className="payment__button">
+            Finalizar Pagamento
+          </button>
+
+        </div>
       </div>
 
       <Footer />

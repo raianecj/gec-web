@@ -16,6 +16,7 @@ function Registrations() {
       const session = JSON.parse(localStorage.getItem('authToken')); // Pegue o token do localStorage ou outro método de autenticação
       if (!session) {
         alert('Você precisa estar logado para se inscrever.');
+        navigate('/login');
         return;
       }
       const response = await fetch('http://localhost:8080/registration/user', {

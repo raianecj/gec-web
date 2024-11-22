@@ -68,7 +68,7 @@ function EventDetails() {
                 console.log('Dados enviados:', formattedData);
                 alert('Inscrição realizada com sucesso! Redirecionando para a página de pagamento...');
                 setIsModalOpen(false);
-                navigate('/payment');
+                navigate('/payment/:registrationId');
             } else {
                 const errorData = await response.json();
                 alert(`Erro ao realizar a inscrição: ${errorData.message}`);
