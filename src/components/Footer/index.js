@@ -19,6 +19,7 @@ export default function Footer() {
                     <h4>Acesso</h4>
                     <a href="/">Login</a>
                     <a href="/register">Cadastre-se</a>
+                    <a href="/organizer">Sou um organizador</a>
                 </div>
                 <div className="footer-column">
                     <h4>Siga-nos</h4>

@@ -1,7 +1,7 @@
 import React from 'react'
 import './style.css';
 import Navbar from '../../components/Navbar/index.js';
-import EventsList from '../../components/EventList';
+import EventsList from '../../components/EventList/index.js';
 import Footer from '../../components/Footer/index.js';
 
 export default function AllEvents() {

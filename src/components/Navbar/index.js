@@ -17,7 +17,7 @@ export default function Navbar() {
                     <ul>
                         <li><Link to="/">Home</Link></li>
                         <li><Link to="/allEvents">Eventos</Link></li>
-                        <li><Link to="/subscribers">Inscrições</Link></li>
+                        <li><Link to="/registrations">Inscrições</Link></li>
                         <li><Link to="/profile">Conta</Link></li>
                     </ul>
                 </nav>

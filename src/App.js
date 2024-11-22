@@ -9,7 +9,8 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import AllEvents from './pages/AllEvents';
 import EventRegistration from "./pages/EventRegistration";
 import Profile from './pages/Profile';
-import Subscribers from './pages/Subscribers';
+import Registrations from './pages/Registrations';
+
 
 function App() {
   return (
@@ -23,7 +24,7 @@ function App() {
         <Route path="/allEvents" element={<AllEvents />} />
         <Route path="/payment" element={<Payment />} />
         <Route path="/register/:eventId" element={<EventRegistration />} />
-        <Route path="/subscribers" element={<Subscribers />} />
+        <Route path="/registrations" element={<Registrations />} />
       </Routes>
     </Router>
   );
